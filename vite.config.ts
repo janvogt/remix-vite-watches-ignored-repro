@@ -9,6 +9,7 @@ declare module "@remix-run/node" {
 }
 
 export default defineConfig({
+  server: { watch: { ignored: ["**/dont_watch/**"] } },
   plugins: [
     remix({
       future: {
